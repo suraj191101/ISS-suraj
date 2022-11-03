@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="iss.css">
+    <title>ISS Tracker</title>
+</head>
+
+<body>
+    <main>
+        <h1>ISS Tracker</h1>
+        <div id="iss-data">
+            <p>Longitude: <span id='longitude'></span>°</p>
+            <p>Latitude: <span id='latitude'></span>°</p>
+            <p>Altitude: <span id='altitude'></span> km</p>
+            <p>Velocity: <span id='velocity'></span> km/h</p>
+        </div>
+
+        <div id='map'></div>
+
+        <h2>Astronauts Aboard the ISS</h2>
+        <div id='astronaut-list'>
+            <ul>
+                <li>Christina Koch</li>
+                <li>Alexander Skvortsov</li>
+                <li>Luca Parmitano</li>
+                <li>Andrew Morgan</li>
+                <li>Oleg Skripochka</li>
+                <li>Jessica Meir</li>
+            </ul>
+        </div>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVIGZkl1bkkmpLa1uXYIQQMO_Xxlmcd3o&callback=initMap"
+            async defer></script>
+        <script src="iss.js"></script>
+    </main>
+</body>
+
+</html>
